@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course Reflections</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  body {
+    background-color: #f0f4f8;
+    line-height: 1.6;
+    color: #333;
+    /* padding: 20px; */
+  }
+
+  
+
+  h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  section {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 25px;
+    transition: transform 0.3s ease;
+  }
+
+  section:hover {
+    transform: translateY(-5px);
+  }
+
+  section h2 {
+    color: #3498db;
+    border-bottom: 3px solid #a5c9e6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  article {
+    background-color: #f9f5f0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+  }
+
+  article:hover {
+    background-color: #f1f1f1;
+  }
+
+  h3 {
+    color: #2980b9;
+    margin-bottom: 10px;
+  }
+
+  .ulu ul {
+    list-style-type: none;
+    padding-left: 15px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .ulu li:before {
+    content: '•';
+    color: #3498db;
+    position: absolute;
+    left: 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  thead {
+    background-color: #a5c9e6;
+    color: #2c3e50;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  strong {
+    color: #2c3e50;
+  }
+
+  @media (max-width: 768px) {
+    section {
+      padding: 15px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    table {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top " style="height: 70px;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/20241222_111759.png" alt="logo image" height="30px" width="90px">
+      </a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav" style="font-size: larger;">
+          <li class="nav-item"><a class="nav-link  " aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="Project_Overview.html">Project Overview</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Course_Reflex.html">Course Learning Reflections</a></li>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+
+
+  <main>
+
+    <div class="hhhd" style="margin-top: 150px; text-align: center;">
+
+      <h1
+        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">
+        Algorithmic Problem-Solving Techniques</h1>
+    </div>
+    <section>
+      <h2>1. Problems in Nature</h2>
+
+      <article>
+        <h3>Iteration</h3>
+        <ul>
+          <li>Iteration means repeating steps in a loop until the job is done.</li>
+          <li>Think of the sun rising and setting every day it’s a repeating cycle.</li>
+          <li>Counting the rings on a tree to know its age each ring is added one at a time over the years.
+        </ul>
+      </article>
+
+      <article>
+        <h3>Recursion</h3>
+        <ul>
+          <li>Recursion is when a problem solves itself in smaller steps until it’s complete.</li>
+          <li>Imagine a tree: A branch splits into smaller branches, which split into even smaller branches.
+          </li>
+          <li> Calculating factorials (e.g., 5! = 5 × 4 × 3 × 2 × 1).</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Backtracking</h3>
+        <ul>
+          <li>Backtracking is like trial and error: you try a path, and if it doesn’t work, you go back and
+            try another one.</li>
+          <li>Picture an ant trying to find food—it explores one path, and if it’s blocked, it turns around
+            and tries a different way.</li>
+          <li>Solving a maze: If one route doesn’t work, you go back and try a new direction..</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Divide and Conquer</h3>
+        <ul>
+          <li><strong>Merging Records:</strong> Breaks data into pieces and puts it together</li>
+          <li><strong>Sorting (Merge Sort):</strong> Splits, sorts, and combines data</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Greedy Algorithm</h3>
+        <ul>
+          <li><strong>ATM Withdrawal:</strong> Takes the biggest bills first</li>
+          <li><strong>Activity Scheduling:</strong> Chooses the task that ends quickest</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Dynamic Programming</h3>
+        <ul>
+          <li><strong>Route Planning:</strong> Solves parts of a route to find the best one</li>
+          <li><strong>Fibonacci:</strong> Remembers results to avoid doing the same work again</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Graph Algorithms</h3>
+        <ul>
+          <li><strong>Dijkstra (Shortest Path):</strong> Finds the quickest route</li>
+          <li><strong>Prim's/Kruskal's (MST):</strong> Connects with the least cost</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Sorting Algorithms</h3>
+        <ul>
+          <li><strong>Task Sorting:</strong> Organizes tasks to get them done efficiently</li>
+          <li><strong>Ticket Sorting:</strong> Sorts tickets by price</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Searching Algorithms</h3>
+        <ul>
+          <li><strong>Linear Search:</strong> Finds a file</li>
+          <li><strong>Binary Search:</strong> Finds a word in a sorted list</li>
+        </ul>
+      </article>
+    </section>
+
+
+
+
+
+    <section>
+      <h2>2. Space and Time Efficiency</h2>
+
+      <article>
+        <h3>Space Efficiency</h3>
+        <p>Space Efficiency is about how much memory or storage an algorithm uses while running. It’s like how
+          many bowls or tools you need to bake that cake. The fewer, the better.</p>
+      </article>
+
+      <article>
+        <h3>Time Efficiency</h3>
+        <p>Time Efficiency is about how fast an algorithm runs. Imagine you’re baking a cake time efficiency is
+          how quickly you can finish baking.</p>
+      </article>
+
+      <article>
+        <h3>Orders of Growth</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Order</th>
+              <th>Time</th>
+              <th>Space</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>O(1)</td>
+              <td>Array access</td>
+              <td>Single variable</td>
+            </tr>
+            <tr>
+              <td>O(log n)</td>
+              <td>Binary search</td>
+              <td>Recursive stack</td>
+            </tr>
+            <tr>
+              <td>O(n)</td>
+              <td>Loop through list</td>
+              <td>Storing list</td>
+            </tr>
+            <tr>
+              <td>O(n log n)</td>
+              <td>Merge Sort</td>
+              <td>Auxiliary space</td>
+            </tr>
+            <tr>
+              <td>O(n²)</td>
+              <td>Bubble Sort</td>
+              <td>2D matrix</td>
+            </tr>
+            <tr>
+              <td>O(2^n)</td>
+              <td>Brute force</td>
+              <td>Storing subsets</td>
+            </tr>
+            <tr>
+              <td>O(n!)</td>
+              <td>Generating permutations</td>
+              <td>Storing permutations</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h3>Complexity Order</h3>
+        <ul>
+          <li><strong>Time:</strong> O(1) &lt; O(log n) &lt; O(n) &lt; O(n log n) &lt; O(n²) &lt; O(2^n) &lt; O(n!)</li>
+          <li><strong>Space:</strong> O(1) &lt; O(log n) &lt; O(n) &lt; O(n log n) &lt; O(n²) &lt; O(2^n) &lt; O(n!)
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Why It Matters</h3>
+        <ul>
+          <li><strong>Optimized Performance:</strong> Faster processing</li>
+          <li><strong>Efficient Memory Use:</strong> Saves memory</li>
+          <li><strong>Scalability:</strong> Handles larger data sets</li>
+          <li><strong>Real-World Impact:</strong> Improves system reliability</li>
+          <li><strong>Resource Constraints:</strong> Smooth operation on limited devices</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>3. Design Principles</h2>
+
+      <article>
+        <h3>Shortest Path Trees</h3>
+        <ul>
+          <li><strong>Fundamental technique:</strong> Finds the most efficient routes</li>
+          <li><strong>Applications:</strong> Essential for optimization and navigation challenges</li>
+          <li><strong>Real-world example:</strong> GPS routing</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Partitioning</h3>
+        <ul>
+          <li><strong>Definition:</strong> Breaks down complex problems into smaller, manageable segments</li>
+          <li><strong>Benefits:</strong> Reduces algorithmic complexity and enables efficient problem-solving</li>
+          <li><strong>Example:</strong> Demonstrated in algorithms like quicksort</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Balancing and Rotations</h3>
+        <ul>
+          <li><strong>Purpose:</strong> Maintains optimal performance of data structures</li>
+          <li><strong>Prevention:</strong> Avoids performance degradation in search and update operations</li>
+          <li><strong>Examples:</strong> AVL trees, Red-Black trees</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Edge Relaxation</h3>
+        <ul>
+          <li><strong>Function:</strong> Allows dynamic updating of path solutions</li>
+          <li><strong>Adaptability:</strong> Enables real-time adaptation to new information</li>
+          <li><strong>Example:</strong> Prominent in Dijkstra's shortest path algorithm</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Level Order Traversal</h3>
+        <ul>
+          <li><strong>Approach:</strong> Systematic, layer-by-layer problem exploration</li>
+          <li><strong>Method:</strong> Implements a breadth-first approach</li>
+          <li><strong>Importance:</strong> Crucial in graph and tree navigation techniques</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Pruning</h3>
+        <ul>
+          <li><strong>Purpose:</strong> Eliminates unnecessary or invalid solution paths</li>
+          <li><strong>Efficiency:</strong> Reduces computational complexity and saves time</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Brave and Cautious Travel Strategies</h3>
+        <ul>
+          <li><strong>Flexibility:</strong> Offers versatile problem-solving approaches</li>
+          <li><strong>Depth-First Search (DFS):</strong> Enables deep, aggressive exploration</li>
+          <li><strong>Breadth-First Search (BFS):</strong> Provides methodical, level-by-level investigation</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>4. Hierarchical Data Structures</h2>
+
+      <h3>Tree</h3>
+      <p><strong>Use:</strong> Representing hierarchies (filesystems, organizations)</p>
+      <p><strong>Pro:</strong> Simple and intuitive structure</p>
+      <p><strong>Con:</strong> Lacks balance; inefficient operations</p>
+
+      <h3>Binary Search Tree (BST)</h3>
+      <p><strong>Use:</strong> Sorted data storage and retrieval</p>
+      <p><strong>Pro:</strong> Efficient (O(log n)) when balanced</p>
+      <p><strong>Con:</strong> Degrades to O(n) if unbalanced</p>
+
+      <h3>AVL Tree</h3>
+      <p><strong>Use:</strong> Maintaining balance for consistent performance</p>
+      <p><strong>Pro:</strong> Always balanced; guarantees O(log n) operations</p>
+      <p><strong>Con:</strong> Costly rotations during updates</p>
+
+      <h3>2-3 Tree</h3>
+      <p><strong>Use:</strong> Ensuring perfect balance with multi-child nodes</p>
+      <p><strong>Pro:</strong> Logarithmic time complexity; robust structure</p>
+      <p><strong>Con:</strong> Implementation complexity</p>
+
+      <h3>Red-Black Tree</h3>
+      <p><strong>Use:</strong> Dynamic operations with approximate balancing</p>
+      <p><strong>Pro:</strong> Predictable O(log n) with fewer rotations than AVL</p>
+      <p><strong>Con:</strong> Slightly slower lookups compared to AVL</p>
+
+      <h3>Heap</h3>
+      <p><strong>Use:</strong> Priority management and sorting</p>
+      <p><strong>Pro:</strong> Quick min/max access; O(log n) insert/extract</p>
+      <p><strong>Con:</strong> Inefficient for general-purpose searches</p>
+
+      <h3>Trie</h3>
+      <p><strong>Use:</strong> Efficient string and prefix searches</p>
+      <p><strong>Pro:</strong> Fast O(m) operations; shared prefixes save space</p>
+      <p><strong>Con:</strong> High memory usage due to large node structures</p>
+    </section>
+
+
+    <section>
+      <h2>5. Array Query Algorithms</h2>
+
+      <article>
+        <h3>Why Needed</h3>
+        <ul>
+          <li><strong>Efficient Data Access:</strong> Fast retrieval of data in large arrays</li>
+          <li><strong>Optimized Operations:</strong> Reduce time complexity in large datasets</li>
+          <li><strong>Dynamic Applications:</strong> Handle real-time tasks like range sums or counts</li>
+          <li><strong>Memory Efficiency:</strong> Balance speed and memory (e.g., Sparse Tables)</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Implications</h3>
+        <ul>
+          <li><strong>Speed vs. Complexity:</strong> Faster queries require more preprocessing</li>
+          <li><strong>Adaptability:</strong> Some algorithms allow quick updates (e.g., Fenwick Tree)</li>
+          <li><strong>Scalability:</strong> Efficiently process millions of data points</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Applications</h3>
+        <ul>
+          <li><strong>Range Queries:</strong> Sum/Min in a range (Segment Tree, Fenwick Tree)</li>
+          <li><strong>Dynamic Updates:</strong> Real-time changes (Fenwick Tree, Lazy Propagation)</li>
+          <li><strong>Prefix Queries:</strong> Cumulative sums (Prefix Sum Array)</li>
+          <li><strong>Static Queries:</strong> Min/Max lookups (Sparse Table)</li>
+          <li><strong>Searches:</strong> Finding elements (Binary Search)</li>
+          <li><strong>Pattern Matching:</strong> Subarray searches (KMP, Sliding Window)</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Core Principles</h3>
+        <ul>
+          <li><strong>Divide and Conquer:</strong> Split arrays for efficiency (e.g., Segment Tree)</li>
+          <li><strong>Preprocessing:</strong> Build structures for quick queries</li>
+          <li><strong>Caching:</strong> Reuse computed values (e.g., Sparse Tables)</li>
+          <li><strong>Space-Time Tradeoff:</strong> Balance memory and speed</li>
+          <li><strong>Incremental Updates:</strong> Minimize recomputations</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2> 6.Trees and Graphs</h2>
+
+      <h3>Tree</h3>
+      <p><strong>Definition:</strong> A hierarchical structure with one root and nodes connected in a parent-child
+        relationship.</p>
+      <h3>Characteristics:</h3>
+      <ul>
+        <li>Acyclic (no cycles)</li>
+        <li>Connected (all nodes are reachable)</li>
+        <li>Directed (parent-child direction)</li>
+      </ul>
+
+      <h3>Graph</h3>
+      <p><strong>Definition:</strong> A collection of nodes (vertices) connected by edges.</p>
+      <h3>Characteristics:</h3>
+      <ul>
+        <li>Can be cyclic (can have cycles)</li>
+        <li>Can be disconnected (some nodes may not be reachable)</li>
+        <li>Directed or Undirected (edges can have direction or not)</li>
+      </ul>
+
+      <h3>Tree Traversals</h3>
+      <ul>
+        <li><strong>Pre-order:</strong> Visit root, then left and right subtrees</li>
+        <li><strong>In-order:</strong> Visit left, root, then right subtrees</li>
+        <li><strong>Post-order:</strong> Visit left, right, then root</li>
+        <li><strong>Level-order (BFS):</strong> Visit nodes level by level</li>
+      </ul>
+
+      <h3>Graph Traversals</h3>
+      <ul>
+        <li><strong>DFS:</strong> Explore as far as possible along each branch</li>
+        <li><strong>BFS:</strong> Explore all neighbors at the current depth first</li>
+      </ul>
+
+      <h3>Applications</h3>
+
+      <h3>Tree Applications</h3>
+      <ul>
+        <li>File systems</li>
+        <li>Expression trees</li>
+        <li>Database indexing</li>
+        <li>Decision trees in ML</li>
+      </ul>
+
+      <h3>Graph Applications</h3>
+      <ul>
+        <li>Social networks</li>
+        <li>Routing (shortest path)</li>
+        <li>Web crawling</li>
+        <li>Recommendation systems</li>
+      </ul>
+    </section>
+
+
+    <section>
+      <h2>7.Sorting and Searching Algorithms</h2>
+      <h3>Sorting Algorithms</h3>
+      <h4>Bubble Sort</h4>
+      <p><strong>Description:</strong> Swaps adjacent elements until sorted.</p>
+      <p><strong>Complexity:</strong> O(n²)</p>
+      <p><strong>Use:</strong> Small datasets</p>
+      <h4>Insertion Sort</h4>
+      <p><strong>Description:</strong> Builds the sorted list one element at a time.</p>
+      <p><strong>Complexity:</strong> O(n²)</p>
+      <p><strong>Use:</strong> Nearly sorted datasets</p>
+      <h4>Merge Sort</h4>
+      <p><strong>Description:</strong> Divides and merges sublists.</p>
+      <p><strong>Complexity:</strong> O(n log n)</p>
+      <p><strong>Use:</strong> Large-scale data</p>
+      <h4>Quick Sort</h4>
+      <p><strong>Description:</strong> Partitions around a pivot and sorts.</p>
+      <p><strong>Complexity:</strong> O(n log n) (average)</p>
+      <p><strong>Use:</strong> General-purpose sorting</p>
+      <h4>Heap Sort</h4>
+      <p><strong>Description:</strong> Sorts by using a binary heap.</p>
+      <p><strong>Complexity:</strong> O(n log n)</p>
+      <p><strong>Use:</strong> Accessing max/min values</p>
+      <h3>Searching Algorithms</h3>
+      <h4>Linear Search</h4>
+      <p><strong>Description:</strong> Checks each element.</p>
+      <p><strong>Complexity:</strong> O(n)</p>
+      <p><strong>Use:</strong> Small or unsorted datasets</p>
+      <h4>Binary Search</h4>
+      <p><strong>Description:</strong> Divides sorted list in half.</p>
+      <p><strong>Complexity:</strong> O(log n)</p>
+      <p><strong>Use:</strong> Sorted data</p>
+      <h4>Hashing</h4>
+      <p><strong>Description:</strong> Uses a hash function for fast lookups.</p>
+      <p><strong>Complexity:</strong> O(1) (avg)</p>
+      <p><strong>Use:</strong> Databases and caches</p>
+      <h4>DFS (Depth-First Search)</h4>
+      <p><strong>Description:</strong> Explores deeply along branches.</p>
+      <p><strong>Complexity:</strong> O(V + E)</p>
+      <p><strong>Use:</strong> AI, network routing</p>
+      <h4>BFS (Breadth-First Search)</h4>
+      <p><strong>Description:</strong> Explores all neighbors at current depth.</p>
+      <p><strong>Complexity:</strong> O(V + E)</p>
+      <p><strong>Use:</strong> Shortest path, GPS</p>
+      <h3>Real-World Applications</h3>
+      <ul>
+        <li><strong>Databases:</strong> Sorting and searching for efficient retrieval</li>
+        <li><strong>E-commerce:</strong> Sorting products, binary search for items</li>
+        <li><strong>Operating Systems:</strong> Sorting files and searching processes</li>
+        <li><strong>Web Search Engines:</strong> Sorting results, web page searches</li>
+        <li><strong>Navigation:</strong> BFS/Dijkstra for shortest path finding</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Graph Algorithms: Spanning Trees and Shortest Paths</h2>
+
+      <h3>Spanning Trees</h3>
+      <p><strong>Definition:</strong> Connects all nodes with the fewest edges, no cycles</p>
+      <p><strong>Minimum Spanning Tree (MST):</strong> A spanning tree with the smallest total edge weight</p>
+      <p><strong>Key Algorithms:</strong> Kruskal's, Prim's</p>
+
+      <h4>Applications</h4>
+      <ul>
+        <li><strong>Network Design:</strong> Reduces cost for connecting nodes or laying cables</li>
+        <li><strong>Cluster Analysis:</strong> Groups similar data points</li>
+        <li><strong>Circuit Design:</strong> Minimizes wiring costs</li>
+      </ul>
+
+      <h3>Shortest Path Algorithms</h3>
+      <p><strong>Definition:</strong> Finds the most efficient path between nodes</p>
+      <p><strong>Key Algorithms:</strong></p>
+      <ul>
+        <li><strong>Dijkstra's:</strong> Works with non-negative weights</li>
+        <li><strong>Bellman-Ford:</strong> Handles negative weights and detects cycles</li>
+        <li><strong>A* Algorithm:</strong> Improves Dijkstra's with heuristics</li>
+      </ul>
+
+      <h4>Applications</h4>
+      <ul>
+        <li><strong>Navigation:</strong> Finds the fastest route (e.g., GPS)</li>
+        <li><strong>Telecommunication:</strong> Optimizes data routing</li>
+        <li><strong>Logistics:</strong> Finds the best delivery routes</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>9.Algorithm Design Techniques</h2>
+
+      <h3>Brave and Cautious Travel</h3>
+      <p><strong>Description:</strong> Combines exploration (DFS for brave) and safety (BFS for cautious)</p>
+      <p><strong>Use:</strong> Solving mazes, navigating graphs</p>
+
+      <h3>Pruning</h3>
+      <p><strong>Description:</strong> Cuts unnecessary parts of the solution space to save time</p>
+      <p><strong>Use:</strong> Chess algorithms, optimization tasks</p>
+
+      <h3>Lazy Propagation</h3>
+      <p><strong>Description:</strong> Delays updates until needed, saving effort</p>
+      <p><strong>Use:</strong> Efficient range queries in data structures</p>
+
+      <h3>Level Order Traversal</h3>
+      <p><strong>Description:</strong> Visits tree nodes level by level (BFS for trees)</p>
+      <p><strong>Use:</strong> Organizational hierarchies, shortest paths in trees</p>
+
+      <h3>Edge Relaxation</h3>
+      <p><strong>Description:</strong> Updates shortest paths gradually during graph traversal</p>
+      <p><strong>Use:</strong> Navigation, network routing</p>
+
+      <h3>Balancing and Rotations</h3>
+      <p><strong>Description:</strong> Keeps data structures balanced for faster operations</p>
+      <p><strong>Use:</strong> AVL and Red-Black Trees</p>
+
+      <h3>Partitioning</h3>
+      <p><strong>Description:</strong> Divides problems/data into smaller parts</p>
+      <p><strong>Use:</strong> Quick Sort, clustering</p>
+
+      <h3>Shortest Path Trees</h3>
+      <p><strong>Description:</strong> Represents shortest paths from one node to all others</p>
+      <p><strong>Use:</strong> GPS, optimized network designs</p>
+    </section>
+
+
+
+
+    <!-- All other sections from the original HTML remain unchanged -->
+  </main>
+<footer class="footer">
+    <div class="content">
+
+
+      <!-- START THE SOCIAL MEDIA CONTENT  -->
+      <div class="footer-sm" style="background-color: #212121;">
+        <div class="cont">
+          <div class="row py-4 text-center text-white">
+            <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+              connect with me on social media
+            </div>
+            <div class="col-lg-7 col-md-6">
+              <a href="https://x.com/PrinceAmogh?t=MgabrvCewMXxvdX-hvYK2Q&s=08"><i class="fab fa-twitter"></i></a>
+              <a href="https://github.com/AmoghTalawar"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/amogh-talawar-769865319/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/prince_amogh07/profilecard/?igsh=dGtuc2hicTEwaGtr"><i
+                  class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+      <div class="cont mt-5">
+        <div class="row text-white justify-content-center mt-3 pb-3">
+          <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+            <h5 class="text-capitalize fw-bold">DSA</h5>
+            <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+            <p class="lh-lg">
+              "Data Structures and Algorithms are the roots of innovation—nurture them, and you'll grow solutions that
+              shape the future."
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+            <h5 class="text-capitalize fw-bold">Quick Links</h5>
+            <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+            <ul class="list-inline campany-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Project_Overview.html">Project Overview</a></li>
+              <li><a href="Course_Reflex.html">Course Learning Reflections</a></li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- START THE COPYRIGHT INFO  -->
+  <div class="footer-bottom pt-5 pb-5">
+        <div class="cont">
+          <div class="row text-center text-white">
+            <div class="col-12">
+              <div class="footer-bottom__copyright">
+                &COPY; Copyright 2021 Data Structures and Algorithms Course.All rights reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+
+</body>
+
+</html>
