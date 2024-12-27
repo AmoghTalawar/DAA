@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Overview</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<style>
+    /* Core Concepts Section */
+.core-concepts {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.core-concepts .heading, .head {
+  width: 100px;
+  height: 4px;
+  background-color: rgba(153, 38, 240, 0.95);
+  margin: 20px auto;
+}
+
+.core-concepts .concept-box {
+  margin-bottom: 30px;
+}
+
+.concept-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  height: 20rem;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.concept-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.concept-card .icon {
+  font-size: 50px;
+  color: rgba(153, 38, 240, 0.95);
+  margin-bottom: 15px;
+}
+
+.concept-title {
+  font-size: 1.7rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.concept-description {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.concept-description strong {
+  color: rgba(153, 38, 240, 0.95);
+}
+
+@media (max-width: 768px) {
+  .concept-card {
+    padding: 15px;
+  }
+
+  .concept-title {
+    font-size: 1.5rem;
+  }
+
+  .concept-description {
+    font-size: 0.95rem;
+  }
+}
+/* Algorithm Section */
+.algorithm-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.algorithm-section .heading-line {
+  width: 120px;
+  height: 4px;
+  background-color: rgba(153, 38, 240, 0.95) ;
+  margin: 20px auto;
+}
+
+.step-box {
+  margin-bottom: 30px;
+}
+
+.step-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.step-card .step-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(153, 38, 240, 0.95);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  opacity: 0.1;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.step-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.step-description strong {
+  color: rgba(153, 38, 240, 0.95);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .step-card .step-number {
+    font-size: 2rem;
+  }
+
+  .step-title {
+    font-size: 1.3rem;
+  }
+
+  .step-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Hospital Layout Section */
+.hospital-layout-section {
+  padding: 60px 0;
+  background-color: #f7f8fc;
+}
+
+.hospital-layout-section .heading-line {
+  width: 100px;
+  height: 4px;
+  background-color: rgba(153, 38, 240, 0.95);
+  margin: 20px auto;
+}
+
+.graph-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.graph-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.graph-icon {
+  font-size: 3rem;
+  color: rgba(153, 38, 240, 0.95);
+  margin-bottom: 15px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.graph-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.graph-description {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .graph-icon {
+    font-size: 2.5rem;
+  }
+
+  .graph-title {
+    font-size: 1.3rem;
+  }
+
+  .graph-description {
+    font-size: 0.9rem;
+  }
+}
+ .card {
+      width: 100%;
+      max-width: 900px;
+      margin: 20px auto;
+      border: 1px solid #6a0dad;
+      background: #2c003e;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Title bar styling */
+    .titlebar {
+      padding: 10px 15px;
+      background-color: #3d0055;
+      display: flex;
+      justify-content: flex-end;
+      border-bottom: 2px solid #6a0dad;
+    }
+
+    .titlebar .buttons button {
+      width: 40px;
+      height: 35px;
+      margin-left: 5px;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      transition: 0.2s;
+    }
+
+    .titlebar .buttons button:hover {
+      background-color: #c042ff2e;
+    }
+
+    .titlebar .close:hover {
+      background-color: #e81123;
+    }
+
+    .titlebar button svg {
+      width: 10px;
+      height: 10px;
+    }
+
+    .cppcode {
+      max-height: 600px;
+      overflow-y: auto;
+      padding: 20px;
+      background-color: #1a002a;
+      color: #fff;
+      font-family: "Courier New", Courier, monospace;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+
+    /* Syntax highlighting */
+    .cppcode .keyword { color: #ff79c6; font-weight: bold; }
+    .cppcode .type { color: #8be9fd; font-weight: bold; }
+    .cppcode .function { color: #50fa7b; font-weight: bold; }
+    .cppcode .comment { color: #6272a4; font-style: italic; }
+    .cppcode .number { color: #bd93f9; font-weight: bold; }
+    .cppcode .string { color: #f1fa8c; }
+
+</style>
+
+
+
+<body>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                                   START SECTION 1 - THE NAVBAR SECTION  
+    /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top " style="height: 70px;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/20241222_111759.png" alt="logo image" height="30px" width="90px">
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" style="font-size: larger;">
+                    <li class="nav-item"><a class="nav-link " aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Project_Overview.html">Project Overview</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Course_Reflex.html">Course Learning Reflections</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="testimonials" class="testimonials">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container">
+          <div class="row text-center text-white">
+            <h1 class="display-3 fw-bold">Business Case</h1>
+            <hr style="width: 100px; height: 3px; " class="mx-auto">
+            <p class="lead pt-1">
+      
+            </p>
+          </div>
+      
+          <!-- START THE CAROUSEL CONTENT  -->
+          <div class="row align-items-center">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- CAROUSEL ITEM 1 -->
+                <div class="carousel-item active">
+                  <div class="testimonials__card">
+                    <p class="lh-lg" style="text-align: justify; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 19px;">
+                      <!-- <i class="fas fa-quote-left"></i> -->
+                        <ul class="lh-lg" style="text-align: justify; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 19px;">
+                        
+                                <li>Autonomous Medical Equipment Dispatch.</li>
+                                <li>Resource Allocation for Surgeries.</li>
+                        </ul>
+                      <!-- <i class="fas fa-quote-right"></i> -->
+                      </div>
+                    </p>
+                  </div>    
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      </section>
+
+
+      <section>
+         <div class="container">
+            <div class="row text-center">
+                <h1 class="display-3 fw-bold">Business Case Solution</h1>
+                <div class="heading-line mb-1"></div>
+              </div>
+    
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+          <div class="services__content">
+            <div class="icon d-block fas fa-hospital"><h3 class="display-3--title mt-1"> Autonomous Medical Equipment Dispatch System</h3></div>
+            <p class="fw-light" style="text-align: justify; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; font-size: 19px;">
+              Hospitals must efficiently move medical supplies and equipment between departments, wards, and operating rooms, including medications, surgical instruments, diagnostic equipment, and blood bags. System failures, inefficiencies, and delays are common in manual transport. The goal of an autonomous medical equipment dispatch system is to address these issues by effectively transporting medical supplies utilizing autonomous vehicles, such as robots.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+          <div class="services__pic" style="margin-bottom: 90px;">
+            <iframe src="https://lottie.host/embed/5edbeb9f-3101-43dd-9d1b-8a88d64dc9c9/qbiRnW9tN2.lottie" style="height: 37rem; width: 40rem; "></iframe>
+          </div>
+        </div>
+      </div>
+
+
+      
+      
+      </section>
+
+      <section id="core-concepts" class="core-concepts">
+        <div class="container">
+          <div class="row text-center mt-5">
+            <h1 class="display-3 fw-bold text-capitalize">Core Concepts and Techniques</h1>
+            <div class="heading"></div>
+            <p class="lead">Key techniques and algorithms that optimize autonomous medical equipment dispatch</p>
+          </div>
+      
+          <!-- Core Concepts Section -->
+          <div class="row mt-4">
+            
+            <!-- Optimized Pathfinding -->
+            <div class="col-lg-4 col-md-6 col-sm-12 concept-box">
+              <div class="concept-card shadow">
+                <div class="icon d-block fas fa-map-marked-alt"></div>
+                <h3 class="concept-title">Optimized Pathfinding</h3>
+                <p class="concept-description">
+                  <strong>A* (A-star) Algorithm</strong>: Finds the most efficient path between two points on a grid (hospital layout), considering both distance and a heuristic estimate.<br>
+                  <strong>Manhattan Distance</strong>: A heuristic used in A* for grid-based navigation, particularly useful in grid-like hospital layouts (rows and columns).
+                </p>
+              </div>
+            </div>
+      
+            <!-- Task Prioritization -->
+            <div class="col-lg-4 col-md-6 col-sm-12 concept-box">
+              <div class="concept-card shadow">
+                <div class="icon d-block fas fa-tasks"></div>
+                <h3 class="concept-title">Task Prioritization</h3>
+                <p class="concept-description">
+                  <strong>Priority Queue</strong>: Ensures that high-priority tasks are handled first, improving system efficiency.<br>
+                  <strong>Fenwick Tree (Binary Indexed Tree)</strong>: Efficient data structure for managing and querying task priorities, allowing quick updates and retrievals.
+                </p>
+              </div>
+            </div>
+      
+            <!-- Task Scheduling -->
+            <div class="col-lg-4 col-md-6 col-sm-12 concept-box">
+              <div class="concept-card shadow">
+                <div class="icon d-block fas fa-calendar-check"></div>
+                <h3 class="concept-title">Task Scheduling</h3>
+                <p class="concept-description">
+                  Autonomous vehicles manage multiple tasks at once. A priority-based scheduling system ensures timely delivery of medical supplies, optimizing task handling.
+                </p>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+
+      <section id="algorithm" class="algorithm-section">
+        <div class="container">
+          <div class="row text-center mt-5">
+            <h1 class="display-3 fw-bold text-capitalize">Algorithm</h1>
+            <div class="head"></div>
+            <p class="lead">
+              Step-by-step process for managing autonomous medical equipment dispatch.
+            </p>
+          </div>
+      
+          <div class="row mt-4">
+            
+            <!-- Step 1 -->
+            <div class="col-lg-6 col-md-6 col-sm-12 step-box">
+              <div class="step-card shadow">
+                <div class="step-number">01</div>
+                <h3 class="step-title">Initialize the Hospital Layout</h3>
+                <p class="step-description">
+                  Represent the hospital as a graph where rooms are nodes and paths between rooms are edges with weights representing time or distance.
+                </p>
+              </div>
+            </div>
+      
+            <!-- Step 2 -->
+            <div class="col-lg-6 col-md-6 col-sm-12 step-box">
+              <div class="step-card shadow">
+                <div class="step-number">02</div>
+                <h3 class="step-title">A* Algorithm for Pathfinding</h3>
+                <p class="step-description">
+                  Use A* to find the optimal path between two rooms. The algorithm considers both actual distance and heuristic estimates of the remaining distance.
+                </p>
+              </div>
+            </div>
+      
+            <!-- Step 3 -->
+            <div class="col-lg-6 col-md-6 col-sm-12 step-box">
+              <div class="step-card shadow">
+                <div class="step-number">03</div>
+                <h3 class="step-title">Task Management</h3>
+                <p class="step-description">
+                  Use a <strong>Priority Queue</strong> for task prioritization and a <strong>Fenwick Tree</strong> to efficiently manage priority updates and queries.
+                </p>
+              </div>
+            </div>
+      
+            <!-- Step 4 -->
+            <div class="col-lg-6 col-md-6 col-sm-12 step-box">
+              <div class="step-card shadow">
+                <div class="step-number">04</div>
+                <h3 class="step-title">Task Dispatch</h3>
+                <p class="step-description">
+                  Select the next task based on priority, compute the optimal path using A*, and dispatch the autonomous vehicle to perform the delivery.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      
+      <section id="hospital-layout" class="hospital-layout-section">
+        <div class="container">
+          <div class="row text-center">
+            <h1 class="display-3 fw-bold text-capitalize">Workflow</h1>
+            <div class="head"></div>
+            <p class="lead">
+              Visualizing the Hospital Layout and Task Dispatch Workflow
+            </p>
+          </div>
+      
+          <div class="row mt-5">
+            <!-- Graph Representation -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="graph-card shadow">
+                <div class="graph-icon">
+                  <i class="fas fa-network-wired"></i>
+                </div>
+                <h3 class="graph-title">Graph Representation</h3>
+                <p class="graph-description">
+                  Represented as an adjacency list where each node (room) is connected to other nodes (rooms) with weighted edges (time/distance).
+                </p>
+              </div>
+            </div>
+      
+            <!-- Pathfinding -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="graph-card shadow">
+                <div class="graph-icon">
+                  <i class="fas fa-route"></i>
+                </div>
+                <h3 class="graph-title">Pathfinding (A*)</h3>
+                <p class="graph-description">
+                  Uses a priority queue to explore nodes, calculating the shortest path between two rooms, guided by a heuristic (Manhattan distance).
+                </p>
+              </div>
+            </div>
+            
+            <!-- Task Queue Management -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="graph-card shadow">
+                <div class="graph-icon">
+                  <i class="fas fa-tasks"></i>
+                </div>
+                <h3 class="graph-title">Task Queue Management</h3>
+                <p class="graph-description">
+                  Tasks are prioritized using a priority queue. The Fenwick Tree efficiently manages updates and queries for task priorities.
+                </p>
+              </div>
+            </div>
+      
+            <!-- Dispatching Tasks -->
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="graph-card shadow">
+                <div class="graph-icon">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="graph-title">Dispatching Tasks</h3>
+                <p class="graph-description">
+                  The task with the highest priority is dispatched, and the optimal path to the destination is calculated for the vehicle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold">Code</h1>
+        <div class="heading-line mb-1"></div>
+      </div>
+      
+      <div class="card">
+        <div class="titlebar">
+          <span class="buttons">
+            <button class="minimize">
+              <svg x="0px" y="0px" viewBox="0 0 10.2 1">
+                <rect x="0" y="50%" width="10.2" height="1"></rect>
+              </svg>
+            </button>
+            <button class="maximize">
+              <svg viewBox="0 0 10 10">
+                <path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path>
+              </svg>
+            </button>
+            <button class="close">
+              <svg viewBox="0 0 10 10">
+                <polygon points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1"></polygon>
+              </svg>
+            </button>
+          </span>
+        </div>
+        <div class="cppcode">
+    <pre>
+    <span class="keyword">#include</span> <span class="string">&lt;iostream&gt;</span>
+    <span class="keyword">#include</span> <span class="string">&lt;vector&gt;</span>
+    <span class="keyword">#include</span> <span class="string">&lt;queue&gt;</span>
+    <span class="keyword">#include</span> <span class="string">&lt;climits&gt;</span>
+    <span class="keyword">#include</span> <span class="string">&lt;cmath&gt;</span>
+    
+    <span class="keyword">using namespace</span> <span class="type">std</span>;
+    
+    <span class="comment">// Define a structure for representing hospital graph (adjacency list)</span>
+    <span class="keyword">class</span> <span class="type">HospitalGraph</span> {
+    <span class="keyword">public</span>:
+        <span class="type">vector</span>&lt;<span class="type">vector</span>&lt;<span class="type">pair</span>&lt;<span class="type">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt;, <span class="type">int</span>&gt;&gt;&gt; graph;
+    
+        <span class="type">HospitalGraph</span>(<span class="type">int</span> n) {
+            graph.resize(n);
+        }
+    
+        <span class="keyword">void</span> <span class="function">addEdge</span>(<span class="type">int</span> u, <span class="type">int</span> v, <span class="type">int</span> weight) {
+            graph[u].push_back({{v, weight}});
+            graph[v].push_back({{u, weight}});
+        }
+    };
+    
+    <span class="comment">// A* Algorithm for shortest path</span>
+    <span class="type">vector</span>&lt;<span class="type">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt; <span class="function">aStar</span>(<span class="type">HospitalGraph</span>& hospital, <span class="type">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt; start, <span class="type">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt; goal) {
+        <span class="type">int</span> n = hospital.graph.size();
+        <span class="type">vector</span>&lt;<span class="type">int</span>&gt; gScore(n, <span class="keyword">INT_MAX</span>), fScore(n, <span class="keyword">INT_MAX</span>);
+        <span class="type">vector</span>&lt;<span class="type">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt; cameFrom(n, {-1, -1});
+        <span class="type">priority_queue</span>&lt;<span class="type">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt; openSet;
+    
+        <pre>
+              <span class="type">auto</span> heuristic = [](pair<int, int> a, pair<int, int> b) -> int {
+                  return abs(a.first - b.first) + abs(a.second - b.second); <span class="comment">// Manhattan distance heuristic</span>
+              };
+          
+              gScore[start.first] = 0;
+              fScore[start.first] = heuristic(start, goal);
+              openSet.push({fScore[start.first], start.first});
+          
+              <span class="keyword">while</span> (!openSet.empty()) {
+                  <span class="type">int</span> current = openSet.top().second;
+                  openSet.pop();
+          
+                  <span class="keyword">if</span> (current == goal.first) {
+                      <span class="type">vector</span>&lt;<span class="type">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt; path;
+                      <span class="keyword">for</span> (<span class="type">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt; at = goal; at != start; at = cameFrom[at.first]) {
+                          path.push_back(at);
+                      }
+                      path.push_back(start);
+                      <span class="keyword">return</span> path; <span class="comment">// Reconstruct the path</span>
+                  }
+          
+                  <span class="keyword">for</span> (<span class="keyword">auto</span>& neighbor : hospital.graph[current]) {
+                      <span class="type">int</span> neighborIndex = neighbor.first.first;
+                      <span class="type">int</span> weight = neighbor.first.second;
+                      <span class="type">int</span> tentative_gScore = gScore[current] + weight;
+          
+                      <span class="keyword">if</span> (tentative_gScore < gScore[neighborIndex]) {
+                          cameFrom[neighborIndex] = {current, neighborIndex};
+                          gScore[neighborIndex] = tentative_gScore;
+                          fScore[neighborIndex] = gScore[neighborIndex] + heuristic({neighborIndex, 0}, goal);
+                          openSet.push({fScore[neighborIndex], neighborIndex});
+                      }
+                  }
+              }
+          
+              <span class="keyword">return</span> {}; <span class="comment">// No path found</span>
+          }
+          
+          <span class="comment">// Fenwick Tree (Binary Indexed Tree) for priority management</span>
+          <span class="keyword">class</span> <span class="type">FenwickTree</span> {
+          <span class="keyword">private</span>:
+              <span class="type">vector</span>&lt;<span class="type">int</span>&gt; tree;
+              <span class="type">int</span> n;
+          <span class="keyword">public</span>:
+              <span class="type">FenwickTree</span>(<span class="type">int</span> size) {
+                  n = size;
+                  tree.resize(n + 1, 0);
+              }
+          
+              <span class="keyword">void</span> <span class="function">update</span>(<span class="type">int</span> index, <span class="type">int</span> delta) {
+                  <span class="keyword">while</span> (index <= n) {
+                      tree[index] += delta;
+                      index += index & -index;
+                  }
+              }
+          
+              <span class="type">int</span> <span class="function">query</span>(<span class="type">int</span> index) {
+                  <span class="type">int</span> sum = 0;
+                  <span class="keyword">while</span> (index > 0) {
+                      sum += tree[index];
+                      index -= index & -index;
+                  }
+                  <span class="keyword">return</span> sum;
+              }
+          };
+          
+          <span class="comment">// Task Manager for medical dispatch tasks with priority</span>
+          <span class="keyword">class</span> <span class="type">TaskManager</span> {
+          <span class="keyword">private</span>:
+              <span class="type">FenwickTree</span> fenwickTree;
+              <span class="type">priority_queue</span>&lt;<span class="type">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt; taskQueue;
+          <span class="keyword">public</span>:
+              <span class="type">TaskManager</span>(<span class="type">int</span> numTasks) : fenwickTree(numTasks) {}
+          
+              <span class="keyword">void</span> <span class="function">addTask</span>(<span class="type">int</span> taskId, <span class="type">int</span> priority) {
+                  taskQueue.push({priority, taskId});
+                  fenwickTree.update(taskId, priority);
+              }
+          
+              <span class="type">int</span> <span class="function">dispatchNextTask</span>() {
+                  <span class="keyword">if</span> (!taskQueue.empty()) {
+                      <span class="type">int</span> taskId = taskQueue.top().second;
+                      taskQueue.pop();
+                      fenwickTree.update(taskId, -fenwickTree.query(taskId)); <span class="comment">// Remove task</span>
+                      <span class="keyword">return</span> taskId;
+                  }
+                  <span class="keyword">return</span> -1;
+              }
+          };
+          
+          <span class="comment">// Main function</span>
+          <span class="keyword">int</span> <span class="function">main</span>() {
+              <span class="type">HospitalGraph</span> hospital(5);
+              hospital.<span class="function">addEdge</span>(0, 1, 1);
+              hospital.<span class="function">addEdge</span>(1, 2, 1);
+              hospital.<span class="function">addEdge</span>(0, 3, 2);
+              hospital.<span class="function">addEdge</span>(3, 4, 1);
+              hospital.<span class="function">addEdge</span>(2, 4, 3);
+          
+              <span class="type">TaskManager</span> taskManager(10);
+              taskManager.<span class="function">addTask</span>(1, 5);
+              taskManager.<span class="function">addTask</span>(2, 1);
+              taskManager.<span class="function">addTask</span>(3, 3);
+          
+              <span class="type">int</span> nextTask = taskManager.<span class="function">dispatchNextTask</span>();
+              <span class="type">cout</span> &lt;&lt; <span class="string">"Dispatching Task ID: "</span> &lt;&lt; nextTask &lt;&lt; <span class="string">"\n"</span>;
+          
+              <span class="type">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt; start = {0, 0};
+              <span class="type">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt; goal = {4, 0};
+              <span class="type">vector</span>&lt;<span class="type">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt; path = <span class="function">aStar</span>(hospital, start, goal);
+          
+              <span class="type">cout</span> &lt;&lt; <span class="string">"Optimal path: "</span>;
+              <span class="keyword">for</span> (<span class="keyword">auto</span>& p : path) {
+                  <span class="type">cout</span> &lt;&lt; <span class="string">"("</span> &lt;&lt; p.first &lt;&lt; <span class="string">", "</span> &lt;&lt; p.second &lt;&lt; <span class="string">") "</span>;
+              }
+              <span class="type">cout</span> &lt;&lt; <span class="string">"\n"</span>;
+          
+              <span class="keyword">return</span> 0;
+          }
+          </pre>
+    </pre></div>
+      </div>
+    
+
+
+
+  <footer class="footer">
+        <div class="container">
+
+
+            <!-- START THE SOCIAL MEDIA CONTENT  -->
+            <div class="footer-sm" style="background-color: #212121;">
+                <div class="container">
+                    <div class="row py-4 text-center text-white">
+                        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+                            connect with us on social media
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+            <div class="container mt-5">
+                <div class="row text-white justify-content-center mt-3 pb-3">
+                    <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+                        <h5 class="text-capitalize fw-bold">DSA</h5>
+                        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                        <p class="lh-lg">
+                            "Data Structures and Algorithms are the roots of innovation—nurture them, and you'll grow
+                            solutions that shape the future."
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+                        <h5 class="text-capitalize fw-bold">Quick Links</h5>
+                        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                        <ul class="list-inline campany-list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Project Overview</a></li>
+                            <li><a href="#">Course Learning Reflections</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- START THE COPYRIGHT INFO  -->
+            <div class="footer-bottom pt-5 pb-5">
+                <div class="container">
+                    <div class="row text-center text-white">
+                        <div class="col-12">
+                            <div class="footer-bottom__copyright">
+                                &COPY; Copyright 2021 Data Structures and Algorithms Course.All rights reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON  -->
+    <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="assets/vendors/js/glightbox.min.js"></script>
+
+    </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
